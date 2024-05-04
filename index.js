@@ -13,7 +13,9 @@ app.use("/contact", contactRoute);
 app.use("/user", userRoute);
 
 
-const PORT = process.env.PORT || 3006; 
+const PORT = process.env.PORT || 3008; 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+module.exports = app;
